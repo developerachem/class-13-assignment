@@ -51,7 +51,11 @@ function weeck (day) {
     }
 }
 
-
+/**
+ * This Is Short Day Calculetor
+ * @param {*} day 
+ * @returns 
+ */
 function weeck2 (day) {
     if( day === 0 ){
         return 'Sun'
