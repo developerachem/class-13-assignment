@@ -54,8 +54,13 @@
 
 .digitel-clock .body {
   border-radius: 10px;
-  overflow: hidden;
   position: relative;
+}
+
+.digitel-clock .body img.img {
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 50px #00000024;
+          box-shadow: 10px 10px 50px #00000024;
 }
 
 .digitel-clock .body .sercel-watch {
@@ -460,8 +465,8 @@
   left: 43%;
   -webkit-transform: rotate(25deg);
           transform: rotate(25deg);
-  -webkit-animation: shoe 5s infinite normal;
-          animation: shoe 5s infinite normal;
+  -webkit-animation: shoe 10s infinite normal;
+          animation: shoe 10s infinite normal;
 }
 
 @-webkit-keyframes shoe {

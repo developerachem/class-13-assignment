@@ -49,9 +49,12 @@
 
     .body {
         border-radius: 10px;
-        overflow: hidden;
         position: relative;
 
+        img.img {
+            border-radius: 10px;
+            box-shadow: 10px 10px 50px #00000024;
+        }
 
         .sercel-watch {
 
@@ -431,7 +434,7 @@
             top: 9px;
             left: 43%;
             transform: rotate(25deg);
-            animation: shoe 5s infinite normal;
+            animation: shoe 10s infinite normal;
         }
     }
 }
