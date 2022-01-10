@@ -2,9 +2,13 @@
     font-family: clock;
     src: url(../fonts/alarm-clock.ttf);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Quicksand:wght@300;400;500;600;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: poppins;
 
     body {
         background-color: #ddd;
@@ -30,7 +34,8 @@
     li {
         list-style: none;
     }
-    .mt{
+
+    .mt {
         margin-bottom: 10px;
     }
 }
@@ -46,66 +51,419 @@
         border-radius: 10px;
         overflow: hidden;
         position: relative;
-        
+
 
         .sercel-watch {
+
+
             height: 242px;
             width: 209px;
             position: absolute;
-            top: 25.5%;
+            top: 25.2%;
             left: 7.8%;
             border-radius: 42px;
             background-color: #ddd;
             overflow: hidden;
-            .main-body{
+
+            .notification {
+                height: 25px;
+                width: 100%;
+                background: #2b2c8875;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                p {
+                    font-size: 11px;
+                    margin-left: 25px;
+
+                }
+
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+
+                    span {
+                        margin: 0 3px;
+                        font-size: 10px;
+                    }
+
+                    span.ml {
+                        margin-right: 24px;
+                        font-size: 18px;
+                        color: #1f447f;
+                    }
+                }
+
+            }
+
+            .main-body {
                 display: flex;
                 //flex-direction: row;
                 align-items: center;
                 position: absolute;
                 justify-content: center;
-                top: 20%;
-                left: 7%;
-                .hoursMinuts{
+                top: 21%;
+                left: 9%;
+
+                .hoursMinuts {
                     width: 80%;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    
-                    span{
+
+                    span {
                         font-size: 50px;
-                        
+
                     }
-    
+
                 }
-                .ampm{
+
+                .ampm {
                     width: 20%;
-                    margin-top: 8px;
-                    span{
-                        margin: 10px 0;
+
+                    span {
+                        margin: 3px 0;
                     }
                 }
             }
-            .day{
+
+            .day {
                 position: absolute;
-                bottom: 35%;
+                bottom: 30%;
                 left: 0;
                 background-color: rgba(33, 25, 107, 0.329);
                 width: 100%;
-                height: 30px;
+                height: 29px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                p{
+                padding: 3px 0;
+
+                p {
                     font-size: 18px;
                 }
             }
-            .date{
+
+            .date {
                 position: absolute;
-                bottom: 15%;
+                bottom: 10%;
                 left: 22%;
                 font-size: 20px;
+
             }
-            
+
         }
+
+
+    }
+}
+
+// 2nd Watch
+.watch {
+    width: 231px;
+    height: 231px;
+    background: #000000;
+    position: absolute;
+    top: 26.7%;
+    right: 7.8%;
+    border-radius: 50%;
+
+    .body2 {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        .time {
+            #hours2 {
+                position: absolute;
+                top: 15%;
+                left: 30%;
+                font-size: 70px;
+                font-weight: bolder;
+                color: white;
+                font-family: poppins;
+                z-index: 111;
+            }
+
+            #munit2 {
+                font-size: 70px;
+                position: absolute;
+                top: 42%;
+                left: 32%;
+                font-weight: bolder;
+                color: #02fc3c;
+                font-family: poppins;
+                z-index: 111;
+            }
+
+            #secend2 {
+                font-size: 25px;
+                position: absolute;
+                bottom: 30%;
+                right: 12%;
+                color: white;
+                font-family: poppins;
+                height: 27px;
+                width: 28px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .day2 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            color: rgb(255, 4, 4);
+            font-size: 20px;
+
+            .wick2 {
+                position: absolute;
+                bottom: 30%;
+                left: 10%;
+                display: inline-block;
+                color: white;
+
+            }
+
+            .month2 {
+                position: absolute;
+                top: 33%;
+                left: 7%;
+                font-size: 16px;
+                display: inline-block;
+                color: #02fc3c;
+                font-family: roboto !important;
+            }
+        }
+
+        .ampm2 {
+            position: absolute;
+            top: 31%;
+            right: 12%;
+            color: #02fc3c;
+            font-size: 18px;
+        }
+
+        .dote {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            .dote1 {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                background-color: #02fc3c3f;
+                border-radius: 50%;
+                top: 13%;
+                left: 63%
+            }
+
+            .dote2 {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                background-color: #02fc3c3f;
+                border-radius: 50%;
+                top: 19%;
+                left: 72%;
+            }
+
+            .dote3 {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                background-color: #02fc3c3f;
+                border-radius: 50%;
+                top: 27%;
+                left: 80%;
+            }
+
+            .dote4 {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                background-color: #02fc3c3f;
+                border-radius: 50%;
+                top: 43%;
+                left: 85.4%;
+            }
+
+            .dote5 {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                background-color: #02fc3c3f;
+                border-radius: 50%;
+                top: 53%;
+                left: 85.4%;
+            }
+
+            .dote6 {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                background-color: #02fc3c3f;
+                border-radius: 50%;
+                top: 70%;
+                left: 79%;
+            }
+
+            .dote7 {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                background-color: #02fc3c3f;
+                border-radius: 50%;
+                top: 77%;
+                left: 72%;
+            }
+
+            .dote8 {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                background-color: #02fc3c3f;
+                border-radius: 50%;
+                top: 83.2%;
+                left: 61%;
+            }
+
+            .dote9 {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                background-color: #02fc3c3f;
+                border-radius: 50%;
+                top: 83.2%;
+                left: 34%;
+            }
+
+            .dote11 {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                background-color: #02fc3c3f;
+                border-radius: 50%;
+                top: 77.2%;
+                left: 24%;
+            }
+
+            .dote12 {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                background-color: #02fc3c3f;
+                border-radius: 50%;
+                top: 70.2%;
+                left: 17%;
+            }
+
+            .dote13 {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                background-color: #02fc3c3f;
+                border-radius: 50%;
+                top: 52%;
+                left: 10%;
+            }
+
+            .dote14 {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                background-color: #02fc3c3f;
+                border-radius: 50%;
+                top: 43%;
+                left: 10%;
+            }
+
+            .dote15 {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                background-color: #02fc3c3f;
+                border-radius: 50%;
+                top: 26%;
+                left: 16%;
+            }
+
+            .dote16 {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                background-color: #02fc3c3f;
+                border-radius: 50%;
+                top: 18.5%;
+                left: 23%;
+            }
+
+            .dote17 {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                background-color: #02fc3c3f;
+                border-radius: 50%;
+                top: 12.3%;
+                left: 34%;
+            }
+        }
+
+        .love {
+            color: red;
+            position: absolute;
+            bottom: 10px;
+            left: 45%;
+            font-size: 25px;
+            animation: love 1s infinite normal;
+        }
+
+        .shoe {
+            width: 40px;
+            position: absolute;
+            top: 9px;
+            left: 43%;
+            transform: rotate(25deg);
+            animation: shoe 5s infinite normal;
+        }
+    }
+}
+
+@keyframes shoe {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(25deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(25deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes love {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1.2);
     }
 }
